@@ -1,0 +1,4 @@
+# Empêcher l'accès direct aux dossiers sensibles (si Apache autorise)
+<IfModule mod_authz_core.c>
+  Require all denied
+</IfModule>
