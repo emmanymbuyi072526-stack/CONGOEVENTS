@@ -1,0 +1,8 @@
+# Autoriser uniquement les images
+<FilesMatch "\.(?i:jpe?g|png|webp)$">
+  <IfModule mod_authz_core.c>
+    Require all granted
+  </IfModule>
+</FilesMatch>
+
+Options -Indexes

@@ -1,0 +1,17 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+
+# Database exports and recovery files may contain personal data
+/resasalle_rdc*.sql
+/db_recovery/
+
+# User-uploaded content
+/assets/uploads/salles/*
+!/assets/uploads/salles/.gitkeep
+!/assets/uploads/salles/.htaccess
+
+# Local editor settings and logs
+/.vscode/
+*.log
